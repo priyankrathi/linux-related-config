@@ -656,40 +656,6 @@ function __setprompt
 }
 PROMPT_COMMAND='__setprompt'
 
-# TSH Proxy
-alias t_sfo="tsh --proxy=sfopx01.pubmatic.com"
-alias t_sv3="tsh --proxy=sv3px01.pubmatic.com"
-alias t_devsv3="tsh --proxy=devsv3px01.pubmatic.com"
-alias t_devva2="tsh --proxy=va2dev01.pubmatic.com"
-alias t_njr3="tsh --proxy=njr3px01.pubmatic.com"
-alias t_va1="tsh --proxy=va1px01.pubmatic.com"
-alias t_lhr19="tsh --proxy=lhr19px01.pubmatic.com"
-alias t_ams="tsh --proxy=amspx01.pubmatic.com"
-alias t_sg3="tsh --proxy=sg3px01.pubmatic.com"
-alias t_sg4="tsh --proxy=sg4px01.pubmatic.com"
-alias t_ty6="tsh --proxy=ty6px01.pubmatic.com"
-
 # CSCOPE Configs
 export CSCOPE_EDITOR=vim
 export EDITOR=vim
-
-# Go setting for adserver
-#export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/go/bin:/home/http/go_workspace/bin
-#export GOPATH=/home/http/go_workspace
-
-# Go Setting for martin
-export GOROOT=/usr/local/go
-export GOPATH=$HOME/go
-export PATH=$GOROOT/bin:$PATH
-export PATH=$GOPATH/bin:$PATH
-export GO111MODULE=on
-
-# Martin Settings
-export MARTIN=/home/priyank.rathi/go/src/git.pubmatic.com/martin-bidder
-source $MARTIN/shell/aliases.sh
-source $MARTIN/shell/functions.sh
-export PATH=$PATH:$MARTIN/bin
-
-#export PATH=$PATH:/home/priyank.rathi/.local/bin
-#export PATH=$HOME/opt/python-3.8.15/bin:$PATH
-export PATH=$HOME/opt/python-3.8.15/bin:$PATH:/home/priyank.rathi/.local/bin
